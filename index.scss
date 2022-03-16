@@ -1,0 +1,20 @@
+//공통 스타일 변수 저장 기능
+$main-color: #2a4;
+$sub-color: #e13;
+$basic-size: 30px;
+
+.box1 {
+  margin: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: $main-color;
+  font-size: $basic-size;
+}
+
+.box2 {
+  margin: 10px;
+  width: (50px * 2);
+  height: 100px;
+  background-color: #e13;
+  font-size: ($basic-size - 10px); //사칙 연산 기능
+}
