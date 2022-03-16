@@ -15,6 +15,16 @@ $basic-size: 30px;
   margin: 10px;
   width: (50px * 2);
   height: 100px;
-  background-color: #e13;
+  background-color: $sub-color;
   font-size: ($basic-size - 10px); //사칙 연산 기능
+}
+
+//해당 class 안에 스타일 한번에 관리
+.nesting {
+  h4 {
+    color: $sub-color;
+  }
+  button {
+    font-size: ($basic-size - 15px);
+  }
 }
