@@ -1,0 +1,36 @@
+@use "reset";
+
+@mixin box-style() {
+  margin: 10px;
+  padding: 10px;
+  width: 80%;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.item-list {
+  margin: 10px;
+  ul {
+    list-style: none;
+  }
+  li {
+    margin-top: -1px;
+    border: 1px solid black;
+  }
+  .active {
+    background-color: skyblue;
+  }
+}
+
+.green-box {
+  @include box-style();
+  background-color: green;
+}
+.blue-box {
+  @include box-style();
+  background-color: blue;
+}
+.yellow-box {
+  @include box-style();
+  background-color: yellow;
+}
