@@ -1,3 +1,9 @@
+.btn-red, .btn-blue {
+  width: 70px;
+  height: 50px;
+  color: #eee;
+}
+
 .box1 {
   margin: 10px;
   width: 100px;
@@ -19,4 +25,12 @@
 }
 .nesting button {
   font-size: 15px;
+}
+
+.btn-blue {
+  background-color: blue;
+}
+
+.btn-red {
+  background-color: red;
 }/*# sourceMappingURL=index.css.map */

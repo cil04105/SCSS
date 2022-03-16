@@ -3,6 +3,12 @@ $main-color: #2a4;
 $sub-color: #e13;
 $basic-size: 30px;
 
+%btn {
+  width: 70px;
+  height: 50px;
+  color: #eee;
+}
+
 .box1 {
   margin: 10px;
   width: 100px;
@@ -27,4 +33,15 @@ $basic-size: 30px;
   button {
     font-size: ($basic-size - 15px);
   }
+}
+
+//@extend 문법
+.btn-blue {
+  @extend %btn;
+  background-color: blue;
+}
+
+.btn-red {
+  @extend %btn;
+  background-color: red;
 }
