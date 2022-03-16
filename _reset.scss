@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@mixin box-style() {
+  margin: 10px;
+  padding: 10px;
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+}
+
+$box-color: red;

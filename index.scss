@@ -1,12 +1,24 @@
+//여러 파일에 고통으로 사용하는 속성 가져오기
+@use "reset.scss";
+
 //공통 스타일 변수 저장 기능
 $main-color: #2a4;
 $sub-color: #e13;
 $basic-size: 30px;
 
+//@extend :: 중복되는 내용 담아서 사용
 %btn {
   width: 70px;
   height: 50px;
   color: #eee;
+}
+
+//@mixin
+@mixin btn-style($size) {
+  width: 70px;
+  height: 50px;
+  color: #eee;
+  font-size: $size;
 }
 
 .box1 {
@@ -35,13 +47,20 @@ $basic-size: 30px;
   }
 }
 
-//@extend 문법
+//@extend_@mixin 문법
 .btn-blue {
-  @extend %btn;
+  // @extend %btn;
+  @include btn-style(18px); //mixin :: 파라미터 문법
   background-color: blue;
 }
 
 .btn-red {
   @extend %btn;
   background-color: red;
+}
+
+//reset.scss 에서 import 하기
+.box {
+  @include reset.box-style();
+  color: reset.$box-color;
 }
